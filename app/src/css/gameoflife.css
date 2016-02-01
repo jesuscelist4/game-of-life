@@ -1,35 +1,35 @@
 body{
-	font-family: sans serif;
-	background: #ccc;
+  font-family: sans serif;
+  background: #ccc;
 }
 
 h1{
-	text-align: center;
-	color: #666;
-	text-shadow: 0px 2px 0px #fff;
+  text-align: center;
+  color: #666;
+  text-shadow: 0px 2px 0px #fff;
 }
 
 .control-panel{
-	text-align: center;
+  text-align: center;
 }
 
 .wrapper{
-	margin: 0 auto;
-	box-shadow: 5px 5px 5px #555;
-	background: #fff;
-	border-radius: 15px;
-	padding: 10px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #555;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .cell{
-	width: 4px;
-	height: 4px;
+  width: 4px;
+  height: 4px;
 }
 
 .dead{
-	background: #fff;
+  background: #fff;
 }
 
 .alive{
-	background: #000;
+  background: #000;
 }

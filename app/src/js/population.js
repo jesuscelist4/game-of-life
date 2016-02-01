@@ -11,7 +11,7 @@ function Population(rows, columns) {
       this.killCell(i,j);
     }
   }
-}
+};
 
 Population.prototype.isValid = function() {
   if (this.cells && this.cells.length && this.cells[0].length ){
@@ -26,7 +26,7 @@ Population.prototype.firstGeneration = function(value) {
   }
 
   this.randomGeneration();
-}
+};
 
 Population.prototype.randomGeneration = function(){
   for (i=0; i<this.numberOfRows(); i++){
@@ -34,7 +34,7 @@ Population.prototype.randomGeneration = function(){
       this.setCell(i,j,Math.round(Math.random()));
     }
   }
-}
+};
 
 Population.prototype.size = function() {
   if (!this.isValid()){
@@ -101,7 +101,7 @@ Population.prototype.nextGeneration = function(){
     }
    }
    return nextGeneration;
- };
+};
 
 Population.prototype.numberOfAliveCells = function(row, column){
    var aliveCells = 0,
@@ -123,4 +123,4 @@ Population.prototype.numberOfAliveCells = function(row, column){
    }
 
    return aliveCells - this.cell(row,column);
- }
+}
