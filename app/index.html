@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html ng-app='gameOfLife'>
-	<head>
-		<meta charset="utf-8">
-		<title>Game Of Life</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Game Of Life</title>
 
-		<link rel="stylesheet" type="text/css" href="src/css/gameoflife.css">
-	</head>
-	<body ng-controller="GenerationController">
-		<h1>Game Of Life</h1>
-		<div  class="control-panel">
-			<button ng-click="start()" class="start-button" style="display:none;">Start</button>
-		</div>
-		<div>
-				<table class="wrapper">
-					<tr ng-repeat="cellRow in population.cells track by $index">
-						<td ng-repeat="cell in cellRow track by $index">
-							<div class="cell dead" ng-if="cell === 0"></div>
-							<div class="cell alive" ng-if="cell === 1"></div>
-						</td>
-					</tr>
-			</table>
-		</div>
+    <link rel="stylesheet" type="text/css" href="src/css/gameoflife.css">
+  </head>
+  <body ng-controller="GenerationController">
+    <h1>Game Of Life</h1>
+    <div  class="control-panel">
+      <button ng-click="start()" class="start-button" style="display:none;">Start</button>
+    </div>
+    <div>
+        <table class="wrapper">
+          <tr ng-repeat="cellRow in population.cells track by $index">
+            <td ng-repeat="cell in cellRow track by $index">
+              <div class="cell dead" ng-if="cell === 0"></div>
+              <div class="cell alive" ng-if="cell === 1"></div>
+            </td>
+          </tr>
+      </table>
+    </div>
 
-		<script src="lib/js/angular.min.js" type="text/javascript"></script>
-		<script src="src/js/population.js" type="text/javascript"></script>
-		<script src="src/js/gameoflife.js" type="text/javascript"></script>
-	</body>
+    <script src="lib/js/angular.min.js" type="text/javascript"></script>
+    <script src="src/js/population.js" type="text/javascript"></script>
+    <script src="src/js/gameoflife.js" type="text/javascript"></script>
+  </body>
 </html>
-
-

@@ -199,7 +199,6 @@ describe("Game of life", function() {
     }
   });
 
-
   describe("Next generation return", function(){
     var currentGeneration, nextPopulation;
 
